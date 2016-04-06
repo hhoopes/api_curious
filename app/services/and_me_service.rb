@@ -2,15 +2,23 @@ class AndMeService
   def initialize(params)
     @param_code = params["code"]
     @host = "https://api.23andme.com/token"
-    @token = get_token
-    @headers = { "Authorization" => "Bearer #{@token}" }
+    @access_token = ""
+    @refresh_token = ""
+    get_token
+    @headers = { "Authorization" => "Bearer #{@access_token}" }
   end
 
-  def get_token
-    response = Net::HTTP.post_form(URI(@host), token_params).body
-    token = JSON.parse(response)["access_token"]
+  def find_user
+    basic_response = `curl https://api.23andme.com/1/user/?email=true -H "Authorization: Bearer #{@access_token}"`
+    parsed = JSON.parse(basic_response)
+    user_id = parsed["profiles"].first["id"]
+    email = parsed["email"]
+    if User.find_by(and_me_id: user_id)
+      User.find_by(and_me_id: user_id)
+    else
+      @user = User.create(and_me_id: user_id, email: email, access_token: @access_token, refresh_token: @refresh_token)
+    end
   end
-
 
   # uri = URI("https://api.23andme.com/token")
   #   param_code = params[:code]
@@ -25,7 +33,16 @@ class AndMeService
   #
   #   response = JSON.parse(Net::HTTP.post_form(uri, token_params).body)
   #   token = response["access_token"]
+  # call = `curl https://api.23andme.com/1/neanderthal/profile_id -H "Authorization: Bearer #{token}"`
+
   private
+
+    def get_token
+      response = Net::HTTP.post_form(URI(@host), token_params).body
+      parsed  = JSON.parse(response)
+      @access_token = parsed["access_token"]
+      @refresh_token = parsed["refresh_token"]
+    end
 
     def token_params
       {
