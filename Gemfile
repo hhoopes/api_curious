@@ -10,7 +10,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
 gem "omniauth"
-gem "omniauth-23andme"
+gem "twenty3andme"
 
 group :development, :test do
   gem 'pry'
