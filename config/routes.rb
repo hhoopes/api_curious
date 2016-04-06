@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
 
   resources :users, only: [:new]
-  get "/receive_code", to: "and_me_oauth#receive_code"
+
+  get "/auth/23andme", as: :twenty_three_and_me_login
+  get "/auth/23andme/callback", to: "sessions#create"
 end
