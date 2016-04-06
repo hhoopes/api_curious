@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
 
   resources :users, only: [:new]
-  get "/receive_code", to: "and_me_oauth#receive_code"
+  get "/receive_code", to: "sessions#receive_code"
 end

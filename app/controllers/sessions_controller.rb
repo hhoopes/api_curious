@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
-  def create
+  def receive_code
+    @user = AndMeService.new(params).find_user
+    binding.pry
   end
 end
