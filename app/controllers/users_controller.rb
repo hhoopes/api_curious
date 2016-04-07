@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
-  def create
-    @user = User.new(params["code"])
-    if @user
-      session[:my_user] = @user
-      redirect_to root_path
+  def ancestry
+    if current_user
+      service = AncestryService.new(@current_user.access_token)
+      @presenter = AncestryPresenter.new(current_user, service)
+
     else
       redirect_to root_path
     end
