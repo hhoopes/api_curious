@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get "/auth/and_me/callback", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
+
+  get "/neanderthal", to: "users#neanderthal"
 end

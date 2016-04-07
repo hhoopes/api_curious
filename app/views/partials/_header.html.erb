@@ -8,6 +8,7 @@
           <li><%= link_to "Home", root_path %></li>
 
           <% if current_user %>
+            <li><%= link_to "Neanderthal Profile", neanderthal_path  %></li>
             <li><p class="nav navbar-text"><%= "Welcome #{current_user.first_name}" %></li>
             <li><%= link_to "Logout", logout_path, method: :delete %></li>
 
