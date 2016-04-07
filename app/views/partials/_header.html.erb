@@ -7,8 +7,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", root_path %></li>
 
-          <% if current_token %>
-            <li><p class="nav navbar-text"><%= "Welcome, " + first_name(current_token) %></li>
+          <% if current_user %>
+            <li><p class="nav navbar-text"><%= "Welcome #{current_user.first_name}" %></li>
             <li><%= link_to "Logout", logout_path, method: :delete %></li>
 
           <% else %>
