@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def create
+    binding.pry
     token = AndMeAuthService.get_token(params[:code])
     if token
       session[:token] = token
