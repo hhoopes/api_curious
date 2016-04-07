@@ -3,11 +3,8 @@ class SessionsController < ApplicationController
     token = AndMeAuthService.get_token(params[:code])
     if token
       session[:token] = token
-      binding.pry
-      redirect_to root_path
-    else
-      redirect_to root_path
     end
+    redirect_to root_path
   end
 
   def destroy

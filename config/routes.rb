@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
 
   get "/receive_code", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
 end

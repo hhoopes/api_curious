@@ -11,7 +11,7 @@ gem 'figaro'
 gem 'pg'
 gem "omniauth"
 gem 'httparty'
-gem "faraday"
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'
