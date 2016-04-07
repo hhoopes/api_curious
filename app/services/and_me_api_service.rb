@@ -1,7 +1,8 @@
 class AndMeApiService
-  attr_reader :host
+  attr_reader :host, :current_user
 
-  def initialize(token)
+  def initialize(token, current_user = current_user)
+    @current_user = current_user
     @host = "https://api.23andme.com/1"
     @headers = { "Authorization" => "Bearer #{token}" }
     @post_headers = @headers.merge({"Content-Type" => "application/json"})

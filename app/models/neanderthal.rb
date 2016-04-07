@@ -1,0 +1,3 @@
+class Neanderthal < OpenStruct
+
+end

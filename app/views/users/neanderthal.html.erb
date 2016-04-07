@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Neanderthal Profile</h1>
+  <div class="jumbotron">
+    <h3>
+      Estimated genome-wide proportion of Neanderthal ancestry for the user's profile. Most users have between 0.01 and 0.04 Neanderthal ancestry.
+    </h3>
+    <table class="table table-striped">
+      <tr>
+        <td>Neanderthal Proportion:</td>
+        <td><%= @neanderthal.proportion %></td>
+      </tr>
+      <tr>
+        <td>Average Proportion:</td>
+        <td><%= @neanderthal.average %></td>
+      </tr>
+      <tr>
+        <td>Ancestry:</td>
+        <td><%= @neanderthal.label %></td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+class NeanderthalPresenter < SimpleDelegator
+  
+end
