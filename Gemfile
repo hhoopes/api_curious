@@ -10,7 +10,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
 gem "omniauth"
-gem "httparty"
+gem 'httparty'
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'
@@ -30,4 +31,6 @@ end
 
 group :test do
   gem 'simplecov', require: false
+  gem 'vcr'
+  gem 'webmock'
 end

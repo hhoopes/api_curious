@@ -1,12 +1,10 @@
 class SessionsController < ApplicationController
-  def receive_code
-    @user = AndMeService.new(params).find_user
-    if @user
-      session[:user_id] = @user.id
-      redirect_to root_path
-    else
-      redirect_to root_path
+  def create
+    token = AndMeAuthService.get_token(params[:code])
+    if token
+      session[:token] = token
     end
+    redirect_to root_path
   end
 
   def destroy
