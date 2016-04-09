@@ -1,5 +1,5 @@
 class AndMeApiService
-  attr_reader :host, :current_user
+  attr_reader :host, :current_user, :post_headers
 
   def initialize(token, current_user = current_user)
     @current_user = current_user
@@ -15,7 +15,7 @@ class AndMeApiService
   def post(path, params)
     HTTParty.post(
       prepare_path(path),
-      headers: @post_headers,
+      headers: post_headers,
       body: prepare_params(params)
     )
   end

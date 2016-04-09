@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
 
   get "/neanderthal", to: "users#neanderthal"
+
+  get "/profile", to: "users#show"
 end

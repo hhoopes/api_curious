@@ -19,7 +19,7 @@ class AndMeAuthService
         "grant_type"        => "authorization_code",
         "code"              => code,
         "redirect_uri"      => "http://localhost:3000/auth/and_me/callback",
-        "scope"             => "basic haplogroups email ancestry names",
+        "scope"             => "basic haplogroups email ancestry names profile:read profile:write",
       }
     end
 end
