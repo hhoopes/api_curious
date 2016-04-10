@@ -1,26 +1,25 @@
 class Profile < OpenStruct
-  def initialize(current_user)
-    @current_user = current_user
+  def initialize(user)
+    @user = user
   end
 
-  def self.service
-    ProfileService.new(current_user.token)
+  def service
+    ProfileService.new(@user.access_token, @user)
   end
 
-  def self.picture_sm
-    binding.pry
+  def picture_sm
     service.picture_sm
   end
 
-  def self.picture_lg
+  def picture_lg
     service.picture_lg
   end
 
-  def self.maternal_haplogroup
+  def maternal_haplogroup
     service.maternal_haplogroup
   end
 
-  def self.paternal_haplogroup
+  def paternal_haplogroup
     service.paternal_haplogroup
   end
 end

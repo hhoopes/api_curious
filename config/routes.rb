@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'profiles/show'
+
+  get 'profiles/edit'
+
+  get 'profiles/update'
+
   root to: "static_pages#landing"
 
   get "/login", to: "sessions#new"
@@ -9,5 +15,6 @@ Rails.application.routes.draw do
 
   get "/neanderthal", to: "users#neanderthal"
 
-  get "/profile", to: "users#show"
+  get "/profile", to: "profiles#show"
+  get "/profile/edit", to: "profiles#edit"
 end

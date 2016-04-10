@@ -2,26 +2,19 @@ require 'rails_helper'
 
 describe Profile do
   context "profile methods" do
-    VCR.use_cassette("profile methods") do
-      profile = Profile.new(ENV["USER_TOKEN"])
+    it "returns profile information" do
+      VCR.use_cassette("profile methods") do
+        user = create(:user)
+        profile = Profile.new(user)
 
-      it "returns a small profile picture" do
         image = profile.picture_sm
-        expect(image).to eq("")
-      end
+        expect(image).to eq("/user/default_tiny.png")
 
-      it "returns a large profile picture" do
-        image = profile.picture_lg
-        expect(image).to eq("")
-      end
+        lg_image = profile.picture_lg
+        expect(lg_image).to eq("/user/default_small.png")
 
-      it "returns user gender" do
-        expect(profile.gender).to eq("F")
-      end
-
-      it "returns only a maternal haplogroup" do
-        expect(profile.maternal_haplogroup).to eq("")
-        expect(profile.paternal_haplogroup).to eq(nil)
+        expect(profile.maternal_haplogroup).to eq("U5b1")
+        expect(profile.paternal_haplogroup).to eq("R1b1b2a1a1")
       end
     end
   end
