@@ -10,7 +10,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
 gem "omniauth"
-gem 'httparty'
+gem 'httmultiparty'
 gem 'faraday'
 
 group :development, :test do

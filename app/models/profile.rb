@@ -22,4 +22,8 @@ class Profile < OpenStruct
   def paternal_haplogroup
     service.paternal_haplogroup
   end
+
+  def update_picture(file)
+    response = service.change_picture(file) 
+  end
 end

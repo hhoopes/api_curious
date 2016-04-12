@@ -4,12 +4,22 @@
 
 <div class="profile container">
   <ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">View Profile</a></li>
-  <li role="presentation"> <%= link_to "Edit Profile", profile_edit_path %></li>
+    <li role="presentation" class="active"><a href="#">View Profile</a></li>
+    <li role="presentation"> <%= link_to "Edit Profile", profile_edit_path %></li>
   </ul>
   <h4>View Profile</h4>
 
   <h5>This is what your genome sharing connections and non-anonymous DNA Relatives connections will see when they view your profile.</h5>
-  <%= image_tag @profile.picture_lg, class: "img-rounded img-responseive"%>
-  <%= @user.first_name + " " + @user.last_name %>
+  <div class="">
+    <%= image_tag @profile.picture_lg, class: "img-rounded img-responseive"%>
+    <%= @user.first_name + " " + @user.last_name %>
+  </div>
+  <div class="col-md-5">
+    <p>Maternal Haplogroup: <%= @profile.maternal_haplogroup %></p>
+    <p>Paternal Haplogroup: <%= @profile.paternal_haplogroup %></p>
+  </div>
+</div>
+
+
+
 </div>

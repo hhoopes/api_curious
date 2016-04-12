@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   def create
   auth = AndMeAuthService.new
     token = auth.get_token(params[:code])
+    binding.pry
     user_info = auth.get_user_info(token)
     user = User.find_or_create_with_auth(token, user_info)
     if user

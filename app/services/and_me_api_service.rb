@@ -9,15 +9,18 @@ class AndMeApiService
   end
 
   def get(path)
-    response = HTTParty.get(@host + path, headers: @headers)
+    response = HTTMultiParty.get(@host + path, headers: @headers)
   end
 
   def post(path, params)
-    HTTParty.post(
-      prepare_path(path),
+    binding.pry
+    response = HTTMultiParty.post(
+      @host + path,
       headers: post_headers,
-      body: prepare_params(params)
-    )
+      query: {
+        :image => params
+        })
+        binding.pry
   end
 
   def prepare_params(params)

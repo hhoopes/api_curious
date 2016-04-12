@@ -80,6 +80,10 @@ GEM
       activesupport (>= 4.1.0)
     hashdiff (0.3.0)
     hashie (3.4.3)
+    httmultiparty (0.3.16)
+      httparty (>= 0.7.3)
+      mimemagic
+      multipart-post
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -100,6 +104,7 @@ GEM
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
+    mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -228,7 +233,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   faraday
   figaro
-  httparty
+  httmultiparty
   jbuilder (~> 2.0)
   jquery-rails
   omniauth

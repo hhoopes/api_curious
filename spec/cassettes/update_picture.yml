@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer ff27744d8d6b35f8e05734749891eb61
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 11 Apr 2016 12:47:40 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - NSC_bqj-wjq-ttm=ffffffff09090e6e45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=d43933585602ba588ac5efd83de3139691460378860; expires=Tue, 11-Apr-17
+        12:47:40 GMT; path=/; domain=.23andme.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
+      Cf-Ray:
+      - 291e8c65aca703d6-DFW
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 12:47:41 GMT
+- request:
+    method: get
+    uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer ff27744d8d6b35f8e05734749891eb61
+      Cookie:
+      - __cfduid=d43933585602ba588ac5efd83de3139691460378860; NSC_bqj-wjq-ttm=ffffffff09090e6e45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 11 Apr 2016 12:47:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '394'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 291e8c682b870962-DFW
+    body:
+      encoding: UTF-8
+      string: '{"url_size_200_200": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_M.122_129_561_568.jpg",
+        "id": "b9e65773cfcdadfd", "url_size_40_40": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_T.122_129_561_568.jpg",
+        "url_size_60_60": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_S.122_129_561_568.jpg"}'
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 12:47:41 GMT
+- request:
+    method: get
+    uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer ff27744d8d6b35f8e05734749891eb61
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 11 Apr 2016 12:47:41 GMT
+      Content-Type:
+      - __builtin__:__call__.close
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=d99fccdf807a30038abc24f1ffc0b65641460378861; expires=Tue, 11-Apr-17
+        12:47:41 GMT; path=/; domain=.23andme.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
+      Cf-Ray:
+      - 291e8c699df51fa6-DFW
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 12:47:42 GMT
+- request:
+    method: get
+    uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer ff27744d8d6b35f8e05734749891eb61
+      Cookie:
+      - __cfduid=d99fccdf807a30038abc24f1ffc0b65641460378861; NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Mon, 11 Apr 2016 12:47:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '394'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 291e8c6ac6321ff4-DFW
+    body:
+      encoding: UTF-8
+      string: '{"url_size_200_200": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_M.122_129_561_568.jpg",
+        "id": "b9e65773cfcdadfd", "url_size_40_40": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_T.122_129_561_568.jpg",
+        "url_size_60_60": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_S.122_129_561_568.jpg"}'
+    http_version: 
+  recorded_at: Mon, 11 Apr 2016 12:47:42 GMT
+recorded_with: VCR 3.0.1

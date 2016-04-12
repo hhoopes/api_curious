@@ -18,4 +18,8 @@ class ProfileService < AndMeApiService
     response = get("/haplogroups/#{current_user.and_me_id}")
     response["paternal"]
   end
+
+  def change_picture(file)
+    post("/profile_picture/#{current_user.and_me_id}", file)
+  end
 end

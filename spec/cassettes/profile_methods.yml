@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
   response:
     status:
       code: 301
@@ -17,26 +17,28 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:55 GMT
-      Content-Length:
-      - '0'
+      - Mon, 11 Apr 2016 12:47:36 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Set-Cookie:
-      - NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
-      - __cfduid=d065f73c328bd5ab51a1d80702ee556e11460256114; expires=Mon, 10-Apr-17
-        02:41:54 GMT; path=/; domain=.23andme.com; HttpOnly
+      - NSC_bqj-wjq-ttm=ffffffff09090e6c45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=db732792348d586331d60dc66981312331460378856; expires=Tue, 11-Apr-17
+        12:47:36 GMT; path=/; domain=.23andme.com; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       Location:
       - https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
       Cf-Ray:
-      - 2912d7aeb3801ff4-DFW
+      - 291e8c4c05501ff4-DFW
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:50 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:37 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
@@ -45,9 +47,9 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
       Cookie:
-      - __cfduid=d065f73c328bd5ab51a1d80702ee556e11460256114; NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=db732792348d586331d60dc66981312331460378856; NSC_bqj-wjq-ttm=ffffffff09090e6c45525d5f4f58455e445a4a42378b;path=/;secure;httponly
   response:
     status:
       code: 200
@@ -56,23 +58,24 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:55 GMT
+      - Mon, 11 Apr 2016 12:47:36 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '162'
+      - '394'
       Connection:
       - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 2912d7b01e9c202a-DFW
+      - 291e8c4d5591116b-DFW
     body:
       encoding: UTF-8
-      string: '{"url_size_200_200": "/user/default_small.png", "id": "b9e65773cfcdadfd",
-        "url_size_40_40": "/user/default_tiny.png", "url_size_60_60": "/user/default_small.png"}'
+      string: '{"url_size_200_200": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_M.122_129_561_568.jpg",
+        "id": "b9e65773cfcdadfd", "url_size_40_40": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_T.122_129_561_568.jpg",
+        "url_size_60_60": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_S.122_129_561_568.jpg"}'
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:50 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:37 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd
@@ -81,7 +84,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
   response:
     status:
       code: 301
@@ -90,7 +93,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:55 GMT
+      - Mon, 11 Apr 2016 12:47:37 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -98,20 +101,20 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - NSC_bqj-wjq-ttm=ffffffff09090e6e45525d5f4f58455e445a4a42378b;path=/;secure;httponly
-      - __cfduid=db5442a0174f59df20a8737730874236f1460256115; expires=Mon, 10-Apr-17
-        02:41:55 GMT; path=/; domain=.23andme.com; HttpOnly
+      - NSC_bqj-wjq-ttm=ffffffff09090e6c45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=d3dbaa8d007a2862ec7c2f5e5bc6346521460378856; expires=Tue, 11-Apr-17
+        12:47:36 GMT; path=/; domain=.23andme.com; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       Location:
       - https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
       Cf-Ray:
-      - 2912d7b1add9261d-DFW
+      - 291e8c4ee56d092c-DFW
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:50 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:38 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/profile_picture/b9e65773cfcdadfd/
@@ -120,9 +123,9 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
       Cookie:
-      - __cfduid=db5442a0174f59df20a8737730874236f1460256115; NSC_bqj-wjq-ttm=ffffffff09090e6e45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=d3dbaa8d007a2862ec7c2f5e5bc6346521460378856; NSC_bqj-wjq-ttm=ffffffff09090e6c45525d5f4f58455e445a4a42378b;path=/;secure;httponly
   response:
     status:
       code: 200
@@ -131,23 +134,24 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:55 GMT
+      - Mon, 11 Apr 2016 12:47:37 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '162'
+      - '394'
       Connection:
       - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 2912d7b2e1a203d6-DFW
+      - 291e8c513d3a116b-DFW
     body:
       encoding: UTF-8
-      string: '{"url_size_200_200": "/user/default_small.png", "id": "b9e65773cfcdadfd",
-        "url_size_40_40": "/user/default_tiny.png", "url_size_60_60": "/user/default_small.png"}'
+      string: '{"url_size_200_200": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_M.122_129_561_568.jpg",
+        "id": "b9e65773cfcdadfd", "url_size_40_40": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_T.122_129_561_568.jpg",
+        "url_size_60_60": "https://www.23andmeobjects.com/photos///c0/2a/c02a6872e7e941feb64a50c1be410eb6_S.122_129_561_568.jpg"}'
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:51 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:38 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/haplogroups/b9e65773cfcdadfd
@@ -156,7 +160,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
   response:
     status:
       code: 301
@@ -165,26 +169,28 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:56 GMT
-      Content-Length:
-      - '0'
+      - Mon, 11 Apr 2016 12:47:37 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Set-Cookie:
-      - NSC_bqj-wjq-ttm=ffffffff09090e9145525d5f4f58455e445a4a42378b;path=/;secure;httponly
-      - __cfduid=d1e24a24c4a97ab6269368d5ca83be6eb1460256116; expires=Mon, 10-Apr-17
-        02:41:56 GMT; path=/; domain=.23andme.com; HttpOnly
+      - NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=d2ed33f1bce400a91f6734dcc0e4e33a41460378857; expires=Tue, 11-Apr-17
+        12:47:37 GMT; path=/; domain=.23andme.com; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       Location:
       - https://api.23andme.com/1/haplogroups/b9e65773cfcdadfd/
       Cf-Ray:
-      - 2912d7b65dc51183-DFW
+      - 291e8c5461600962-DFW
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:51 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:38 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/haplogroups/b9e65773cfcdadfd/
@@ -193,9 +199,9 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
       Cookie:
-      - __cfduid=d1e24a24c4a97ab6269368d5ca83be6eb1460256116; NSC_bqj-wjq-ttm=ffffffff09090e9145525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=d2ed33f1bce400a91f6734dcc0e4e33a41460378857; NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
   response:
     status:
       code: 200
@@ -204,7 +210,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:57 GMT
+      - Mon, 11 Apr 2016 12:47:39 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -214,7 +220,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 2912d7b7a8bd0962-DFW
+      - 291e8c55ee182635-DFW
     body:
       encoding: UTF-8
       string: '{"maternal_terminal_snps": [{"rsid": "i1000002", "rcrs_position": "5656"},
@@ -222,7 +228,7 @@ http_interactions:
         [{"rsid": "rs16981293", "snp": "M405"}], "maternal": "U5b1", "id": "b9e65773cfcdadfd",
         "paternal": "R1b1b2a1a1"}'
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:52 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:40 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/haplogroups/b9e65773cfcdadfd
@@ -231,7 +237,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
   response:
     status:
       code: 301
@@ -240,28 +246,26 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:57 GMT
-      Content-Type:
-      - Python/WSGI/Application
+      - Mon, 11 Apr 2016 12:47:39 GMT
       Content-Length:
       - '0'
       Connection:
       - keep-alive
       Set-Cookie:
-      - NSC_bqj-wjq-ttm=ffffffff09090e6e45525d5f4f58455e445a4a42378b;path=/;secure;httponly
-      - __cfduid=d56980e43c111c229f5de3586ae042ca81460256117; expires=Mon, 10-Apr-17
-        02:41:57 GMT; path=/; domain=.23andme.com; HttpOnly
+      - NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=dad9beb6d6403974e1962bf9f8ac19a411460378859; expires=Tue, 11-Apr-17
+        12:47:39 GMT; path=/; domain=.23andme.com; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       Location:
       - https://api.23andme.com/1/haplogroups/b9e65773cfcdadfd/
       Cf-Ray:
-      - 2912d7be72151fa6-DFW
+      - 291e8c60032c1fbe-DFW
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:53 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:40 GMT
 - request:
     method: get
     uri: https://api.23andme.com/1/haplogroups/b9e65773cfcdadfd/
@@ -270,9 +274,9 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 3bc8cc20fc98118b35ccd7fd50ffc9f9
+      - Bearer ff27744d8d6b35f8e05734749891eb61
       Cookie:
-      - __cfduid=d56980e43c111c229f5de3586ae042ca81460256117; NSC_bqj-wjq-ttm=ffffffff09090e6e45525d5f4f58455e445a4a42378b;path=/;secure;httponly
+      - __cfduid=dad9beb6d6403974e1962bf9f8ac19a411460378859; NSC_bqj-wjq-ttm=ffffffff09090e6a45525d5f4f58455e445a4a42378b;path=/;secure;httponly
   response:
     status:
       code: 200
@@ -281,7 +285,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Sun, 10 Apr 2016 02:41:58 GMT
+      - Mon, 11 Apr 2016 12:47:40 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -291,7 +295,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 2912d7bfc7091183-DFW
+      - 291e8c61541a202a-DFW
     body:
       encoding: UTF-8
       string: '{"maternal_terminal_snps": [{"rsid": "i1000002", "rcrs_position": "5656"},
@@ -299,5 +303,5 @@ http_interactions:
         [{"rsid": "rs16981293", "snp": "M405"}], "maternal": "U5b1", "id": "b9e65773cfcdadfd",
         "paternal": "R1b1b2a1a1"}'
     http_version: 
-  recorded_at: Sun, 10 Apr 2016 02:41:53 GMT
+  recorded_at: Mon, 11 Apr 2016 12:47:41 GMT
 recorded_with: VCR 3.0.1

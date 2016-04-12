@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
       new_user.email         = user_info[:email]
       new_user.and_me_id     = user_info[:profile_id]
       new_user.first_name    = user_info[:first_name]
+      new_user.last_name     = user_info[:last_name]
     end
     update_access_token(token)
     user
