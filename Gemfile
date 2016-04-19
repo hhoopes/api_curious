@@ -12,6 +12,7 @@ gem 'pg'
 gem "omniauth"
 gem 'httparty'
 gem 'faraday'
+gem "omniauth-23andme"
 
 group :development, :test do
   gem 'pry'

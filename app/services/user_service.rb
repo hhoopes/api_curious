@@ -12,6 +12,7 @@ class UserService < AndMeApiService
 
   def profile_id
     response = get("/user")
+    binding.pry
     response["profiles"].first["id"]
   end
 

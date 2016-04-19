@@ -8,7 +8,6 @@ class Profile < OpenStruct
   end
 
   def self.picture_sm
-    binding.pry
     service.picture_sm
   end
 
